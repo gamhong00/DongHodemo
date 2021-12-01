@@ -1,0 +1,70 @@
+/* --------------------------------------------sanpham---------------------------------------- */
+.sanpham{
+    padding: 100px 0 0;
+    margin: 0 150px 0 160px;
+}
+.sanpham-top{
+    margin-bottom: 50px;
+}
+.sanpham-top p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 12px;
+    font-size: 12px;
+}
+.sanpham-left{
+    width: 20%;
+}
+.sanpham-left p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+} 
+.sanpham-right{
+    width: 80%;
+}
+.sanpham-right-top-item:first-child{
+    flex: 2;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.sanpham-right-top-item{
+    flex: 1;
+    padding: 0 12px;
+}
+.sanpham-right-top-item button{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid thistle;
+    cursor: pointer;
+}
+.sanpham-right-top-item select{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid thistle;
+    cursor: pointer;
+}
+.sanpham-right-content{
+    margin: 20px;
+    justify-content: space-between;
+}
+.sanpham-right-content-item{
+    width :calc(25% - 12px);
+    text-align: center;
+    padding: 12px 0;
+}
+.sanpham-right-content h1{
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    color: black;
+}
+.sanpham-right-content-item img{
+    width: 100%;
+}
