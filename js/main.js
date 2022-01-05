@@ -568,5 +568,5 @@ function checklogin(){
 function logout(){
     localStorage.removeItem('userlogin');
     localStorage.removeItem('cart');
-    location.href='../index.html';
+    location.href='index.html';
 }
