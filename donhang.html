@@ -17,13 +17,11 @@
         window.onload = function()
         {
             // taomenu();
-            //theloai();
-            theloaimenu();
+            theloai();
             hienthitopmenu();
             taosanpham();
-            hienthisanpham();
+            showbill();
             checklogin();
-
         }
     </script>
     <header id="navbar">
@@ -39,7 +37,7 @@
             <li><a href="giohang.html"><i class="fas fa-shopping-cart"></i></a>
                 <ul id="sub-giohang">
                     <li><a href="giohang.html">Giỏ hàng</a></li>
-                    <li><a href="donhang.html">Đơn hàng</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
 
                 </ul>
             </li>
@@ -71,23 +69,6 @@
       
       </div>
     </header>
-      <!---------------------------------------------- slider-------------------------------------- -->
-      <section id="slider">
-        <div class="aspect-ratio-169">
-             <img src="image/slider1.jpg">
-             <img src="image/slider2.jpg">
-             <img src="image/slider3.jpg">
-              <img src="image/slider4.jpg">
-             <img src="image/slider5.jpg">
-         </div>
-         <div class="dot-container">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    </section>
      <!-- ---------------------------login------------------------------------------- -->
      <div id="loginwrap">
         <form id="loginform" onsubmit="return ktdangnhap();">
@@ -143,50 +124,12 @@
         </form>
     </div>
     
-     <!----------------------------- sanpham-------------------------------------- -->
-     <section class="sanpham" id="sp">
-
-         <div class="container">
-             <div class="row">
-                <div class="sanpham-left" id="sanpham-leftmenu">
-                    <!-- theloaimenu -->
-                </div>
-                <div class="sanpham-right row">
-                    <div class="sanpham-right-top-item">
-                        <!-- <p>Đồng hồ mới nhất</p> -->
-                    </div>
-                   
-                     <div class="sanpham-right-content row" id="hienthisp">
-                          <!-- sanpham -->   
-                    </div>
-
-                         <div id="chitietsp" class="wrap">
-                            <div id="chitiet">
-                                <button type="button" class="close" onClick="closechitiet()">x</button>
-                                <div class="left">
-                                    <img id="imgbig" src="">
-                                </div>
-                                <div class="right">
-                                    <h3 id="tentl"></h3>
-                                    <h2 id="tensp"></h2>
-                                    <h4 id="giasp"></h4>
-                                    <h4>Số lượng</h4>
-                                    <button class="giamsoluong" onClick="giamsoluong()">-</button><input type="text" id="soluong" value="1"><button class="tangsoluong" onClick="tangsoluong()">+</button>
-                                    <button class="themvaogio" onclick="themvaogio()">Thêm vào giỏ</button>
-                                </div>
-                            </div>
-                        </div>
-                      
-                    <div class="sanpham-right-bottom">
-                        <div id="page"></div>
-                    </div>
-                </div>
-                
-             </div>
-         </div>
-
-     </section>
-   
+    <!-- --------------------------------------------donhang---------------------------------------- -->
+    <section class="show_bill">
+        <div id="bill">
+            <!-- showbill -->
+        </div>
+    </section>
      <!---------------------------------------------- footer-------------------------------------- -->
      <footer class="footer">
          <div class="grid">
@@ -194,21 +137,21 @@
                  <div class="grid__column-2-4">
                      <b class="footer__heading">CHĂM SÓC KHÁCH HÀNG</b>
                      <ul class="footer-list">
-                         <li class="footer-item">
-                             <a href="" class="footer-item__link">An Dương Vương, phường 3, quận 5, TP Hồ Chí Minh</a>
-                         </li>
-                         <li class="footer-item">
-                            <a href="" class="footer-item__link">Điện thoại: (036) 9204 2077</a>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">An Dương Vương, phường 3, quận 5, TP Hồ Chí Minh</a>
                         </li>
                         <li class="footer-item">
-                            <a href="" class="footer-item__link">Email: honggambdbt@gmail.com</a>
-                        </li>
-                         <li class="footer-item">
-                            <a href="" class="footer-item__link">LOVETIME-Shop Mall</a>
-                        </li>
+                           <a href="" class="footer-item__link">Điện thoại: (036) 9204 2077</a>
+                       </li>
+                       <li class="footer-item">
+                           <a href="" class="footer-item__link">Email: honggambdbt@gmail.com</a>
+                       </li>
                         <li class="footer-item">
-                            <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
-                        </li>
+                           <a href="" class="footer-item__link">LOVETIME-Shop Mall</a>
+                       </li>
+                       <li class="footer-item">
+                           <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                       </li>
 
                      </ul>
                  </div>
@@ -295,5 +238,4 @@
         
      </footer>
 </body>
-<script src="js/slider.js"></script>
 </html>
